@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo - Aplicação Desktop</title>
+    
+</head>
+<body>
+    <h1>Testando Electron!!</h1>
+  
+    
+
+    <label for="numero">Digite um numero: </label>  
+    <input type="text" id="numero" placeholder="Digite o numero aqui">
+    <p id = "impopa"></p>
+    <button id = "botao1" onclick="pegarNum()"> Enviar </button>   
+    
+
+     <script>
+     let parouimpar = document.getElementById("botao1");
+        function pegarNum() {
+            let numero = document.getElementById("numero").value;
+            if (numero % 2 == 0) {
+                document.getElementById('impopa').innerHTML = ("O numero " + numero + " é par!");
+            } else {
+                document.getElementById('impopa').innerHTML = ("O numero " + numero + " é impar!");
+            }
+        }
+    
+
+    </script>
+
+  <h2>Cheque se seu Cartão foi clonado:</h2>
+
+    <label for="nome">Numeros do Cartão: </label>
+    <input type="text" id="nome" placeholder="Digite aqui">   
+    <p id = "texto"></p>
+    <button id = "botao" onclick="pegarNome()"> Enviar </button>
+    <script>
+        function pegarNome() {
+            let nome = document.getElementById("nome").value;
+         document.getElementById('texto').innerHTML = "Seu cartão " + nome + " foi clonado com sucesso!";
+        }
+        
+    </script>
+</body>
+</html>
