@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #150346;
+            zoom: 170%;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        label {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        input {
+            color: #ffffff;
+            background-color: #1c153a;
+            margin-bottom: 10px;
+            padding: 3px;
+            width: 317px;
+            border: none;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #431cec;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #3b0da7;
+        }
+        p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+    </style>
+<body>
+    
+    <div> <h1>Conversor de moedas</h1> </div>
+   <label for="numero">   Digite o valor em reais para converter: </label>  <br> <br>
+    <input type="text" id="numero" placeholder="Digite o numero aqui">
+    <div style="display: flex; gap: 5px; margin-top: 10px;">
+        <button id = "botao1" onclick="pegarDolar()"> Dolar </button> 
+        <button id = "botao2" onclick="pegarEuro()"> Euro </button>  
+        <button id = "botao3" onclick="pegarPeso()"> Peso </button>   
+        <button id = "botao4" onclick="pegarLibra()"> Libra </button>  
+        <button id = "botao5" onclick="pegarFranco()"> Franco </button> 
+    </div>
+    
+    <script src = "atv-2.js"> </script>
+    <p id = "receber"></p>
+</body>
+</html>

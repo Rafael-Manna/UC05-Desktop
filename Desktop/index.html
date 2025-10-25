@@ -1,80 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        label {
-            font-weight: bold;
-        }
-        input {
-            margin-bottom: 10px;
-            padding: 5px;
-            width: 200px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-        p {
-            font-size: 16px;
-            color: #555;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo - Aplicação Desktop</title>
-    
+    <title>Atividade</title>
+    <script src="funcoes.js"></script>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #150346;
+        zoom: 150%;
+    }
+    h1 {
+        color: #ffffff;
+    }
+    button {
+        padding: 7px 15px;
+        background-color: #431cec;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    button:hover {
+        background-color: #3b0da7;
+    }
+
+</style>
 <body>
-    <h1>Testando Electron!!</h1>
-  
-    
-
-    <label for="numero">Digite um numero: </label>  
-    <input type="text" id="numero" placeholder="Digite o numero aqui">
-    <p id = "impopa"></p>
-    <button id = "botao1" onclick="pegarNum()"> Enviar </button>   
-    
-
-     <script>
-     let parouimpar = document.getElementById("botao1");
-        function pegarNum() {
-            let numero = document.getElementById("numero").value;
-            if (numero % 2 == 0) {
-                document.getElementById('impopa').innerHTML = ("O numero " + numero + " é par!");
-            } else {
-                document.getElementById('impopa').innerHTML = ("O numero " + numero + " é impar!");
-            }
-        }
-    
-
-    </script>
-
-  <h2>Cheque se seu Cartão foi clonado:</h2>
-
-    <label for="nome">Numeros do Cartão: </label>
-    <input type="text" id="nome" placeholder="Digite aqui">   
-    <p id = "texto"></p>
-    <button id = "botao" onclick="pegarNome()"> Enviar </button>
-    <script>
-        function pegarNome() {
-            let nome = document.getElementById("nome").value;
-         document.getElementById('texto').innerHTML = "Seu cartão " + nome + " foi clonado com sucesso!";
-        }
+    <h1>Selecione uma das atividades para visualizar</h1>
+    <menu style="display:inline-flex; gap: 30px; margin-top: 10px;">
         
-    </script>
+            <a href="../Atividades/atv-1/atv-1.html">
+                <button>Atividade 1</button> </a>
+        
+            <a href="../Atividades/atv-2/atv-2.html">
+                <button>Atividade 2</button>  </a>
+
+            <a href="../Atividades/atv-3/atv-3.html">
+                <button>Atividade 3</button> </a>
+        
+    </menu>
+    
+    
 </body>
 </html>

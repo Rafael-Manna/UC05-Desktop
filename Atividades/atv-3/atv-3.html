@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #150346;
+        zoom: 170%;
+    }
+    h1 {
+        color: #ffffff;
+    }
+    label {
+        font-weight: bold;
+        color: #ffffff;
+    }
+    input {
+        color: #ffffff;
+        background-color: #1c153a;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 3px;
+        width: 50px;
+        border: none;
+    }
+    button {
+        padding: 10px 10px;
+        background-color: #431cec;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    button:hover {
+        background-color: #3b0da7;
+    }
+    p {
+        font-size: 16px;
+        color: #ffffff;
+    }
+</style>
+<body>
+    <h1>Calculadora de media!</h1>
+    <label for="numero1">   Digite a primeira nota: </label> <br>
+    <input type="text" id="numero1" placeholder="1° nota"> 
+    <input type="text" id="numero2" placeholder="2° nota"> 
+     <input type="text" id="numero3" placeholder="3° nota"> 
+     <input type= "text" id="numero4" placeholder="4° nota">  <br>
+     <button id = "botao1" onclick="pegarMedia()"> Calcular Media </button> 
+     <script src="atv-3.js"></script> 
+    <p id = "media">  </p>
+</body>
+</html>
