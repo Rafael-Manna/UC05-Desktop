@@ -14,3 +14,6 @@ function pegarMedia(){
         document.getElementById('media').innerHTML = "A média das notas é: " + media.toFixed(2) + ". Aluno reprovado!";
     }
 }
+ function voltarPagina() {
+            window.location.href = "../../desktop/index.html";
+        }

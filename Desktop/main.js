@@ -3,9 +3,14 @@ const criarJanela = () => {
     const janela = new BrowserWindow({
         width: 800,
         height: 800,
+        resizable: false,
+        maximizable: false,
+        minimizable: false,
+        icon: '../img/image.png',
         title: "Exemplo - Aplicação Desktop"
     })
-    janela.loadFile('index.html')
+    janela.loadFile('index.html');
+    janela.setMenu(null);
 }
 app.whenReady().
     then(() => {

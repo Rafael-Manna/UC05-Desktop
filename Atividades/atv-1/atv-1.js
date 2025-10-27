@@ -4,7 +4,7 @@
         }
         let parouimpar = document.getElementById("botao1");
 
-        function pegarNum() {
+   function pegarNum() {
             let numero = document.getElementById("numero").value;
             if (numero % 2 == 0) {
                 document.getElementById('impopa').innerHTML = ("O numero " + numero + " é par!");
@@ -12,4 +12,6 @@
                 document.getElementById('impopa').innerHTML = ("O numero " + numero + " é impar!");
             }
         }
-        
+    function voltarPagina() {
+            window.location.href = "../../desktop/index.html";
+        }

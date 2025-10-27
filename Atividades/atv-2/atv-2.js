@@ -25,4 +25,6 @@
             numero = numero / 5.90           
            document.getElementById('receber').innerHTML = ("Valor convertido Para Franco Suíço é: " + numero .toFixed(2) + " CHF");           
                 }
-        
+       function voltarPagina() {
+            window.location.href = "../../desktop/index.html";
+        }
