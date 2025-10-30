@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Estrutura da calculadora */
+.calculadora {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+/* Campo do visor */
+#visor {
+    width: 92%;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #00ff9f;
+    box-shadow: inset 0 0 5px #000;
+}
+
+/* Estilo base dos botões */
+button {
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Botões numéricos */
+.num {
+    background-color: #3b3b3b;
+    color: #fff;
+}
+.num:hover {
+    background-color: #555;
+}
+
+/* Botões de operadores */
+.op {
+    background-color: #ff9500;
+    color: #fff;
+}
+.op:hover {
+    background-color: #ffa733;
+}
+
+/* Botão igual */
+.equal {
+    background-color: #00c853;
+    color: white;
+}
+.equal:hover {
+    background-color: #00e676;
+}
+
+/* Botões de controle (Limpar, C, Voltar) */
+.control {
+    background-color: #d32f2f;
+    color: white;
+}
+.control:hover {
+    background-color: #f44336;
+}
+
+/* Botão voltar */
+#limpar {
+    width: 40%;
+    background-color: #1976d2;
+    color: white;
+    margin-top: 10px;
+}
+#voltar1 {
+    width: 100%;
+    background-color: #1976d2;
+    color: white;
+    margin-top: 10px;
+}
+#voltar1:hover {
+    background-color: #2196f3;
+}

@@ -7,9 +7,14 @@ const criarJanela = () => {
         maximizable: false,
         minimizable: false,
         icon: '../img/image.png',
-        title: "Exemplo - Aplicação Desktop"
+        title: "Exemplo - Aplicação Desktop",
+        webPreferences: {
+            nodeIntegration: true,
+            devTools: true
+        }
     })
     janela.loadFile('index.html');
+    janela.webContents.openDevTools();
     janela.setMenu(null);
 }
 app.whenReady().
