@@ -45,5 +45,4 @@ function calculadora() {
     });
 }
 
-// Chama a função quando a janela for carregada
 window.addEventListener('load', calculadora);
