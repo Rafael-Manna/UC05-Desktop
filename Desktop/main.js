@@ -30,15 +30,35 @@ function criarJanela(){
     janela.webContents.on('did-finish-load', () => { //evento disparado quando a janela termina de carregar
         janela.webContents.setZoomFactor(1.0) 
     }) 
-
-    Menu.setApplicationMenu(Menu.buildFromTemplate(template)) // criação do menu
+ let menu = Menu.buildFromTemplate(template)
+    Menu.setApplicationMenu(menu) // criação do menu
+    janela.webContents.on('context-menu', () => {
+        menu.popup({window: janela})
+    })
 }
-
+const criarJanela2 = () => {
+    const janela = new BrowserWindow({
+        width: 300,
+        height: 300,
+        resizable: false,
+        maximizable: false,
+        minimizable: false,
+        title: "Sobre a aplicação",
+        webPreferences: {
+            nodeIntegration: true,
+            devTools: true
+        }
+    })
+    janela.loadFile('../Desktop/sobre.html');
+    janela.webContents.openDevTools();
+    janela.setMenu(null);
+}
 const template = [
     {label: "Aplicação", 
         submenu:[
             {label: "Novo", click: () => criarJanela()},  
             {label: "Sair", role: 'quit'}]}, 
+            {label: "Sobre", click: () => criarJanela2()},
     {label: "Zoom",
         submenu:[{label: 'Ampliar',  role: 'zoomin' } , 
                 {label: 'Diminuir', role: 'zoomout'}]
